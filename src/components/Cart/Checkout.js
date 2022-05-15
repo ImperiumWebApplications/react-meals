@@ -52,7 +52,7 @@ const Checkout = (props) => {
       city,
     };
 
-    console.log(formData);
+    props.onOrderSubmit(formData);
   };
   return (
     <form onSubmit={formSubmitHandler}>
